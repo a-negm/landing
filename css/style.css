@@ -1,0 +1,107 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+@import url(components/buttons.css);
+@import url(components/card.css);
+
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+  color:  #FD1015;
+  font-size: 36px;
+}
+
+/* Custom design below! */
+.hero {
+  height: 80vh;
+  background: linear-gradient(92deg, #a8ff78, #78ffd6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #FD1015;
+
+}
+
+.container {
+  width: auto;
+  padding: 64px;
+}
+
+.lottie {
+  width: 700px;
+  height: 700px;
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 42px;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  height: 250px;
+  background: linear-gradient(316deg, #a8ff78, #78ffd6);
+  text-align: center;
+}
+
+.links {
+  padding: 24px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .lottie {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #FD1015;
+  }
+  .card-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  .lottie {
+    display: none;
+  }
+  .card {
+    width: auto;
+  }
+  .card img {
+    height: auto;
+  }
+
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
